@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		885301D72C01AFD200495B6F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885301D62C01AFD200495B6F /* LoginViewModel.swift */; };
+		885301D92C01E40900495B6F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885301D82C01E40900495B6F /* Colors.xcassets */; };
+		885301DB2C01E56F00495B6F /* JoyceLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885301DA2C01E56F00495B6F /* JoyceLogin.swift */; };
+		885301DD2C01ED9F00495B6F /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885301DC2C01ED9F00495B6F /* AppFont.swift */; };
+		885301E22C01EFFA00495B6F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 885301DF2C01EFFA00495B6F /* Montserrat-Regular.ttf */; };
+		885301E32C01EFFA00495B6F /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 885301E02C01EFFA00495B6F /* Montserrat-Medium.ttf */; };
+		885301E42C01EFFA00495B6F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 885301E12C01EFFA00495B6F /* Montserrat-Bold.ttf */; };
+		885301E62C02069100495B6F /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885301E52C02069100495B6F /* AccountsView.swift */; };
+		885301E82C02069E00495B6F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885301E72C02069E00495B6F /* HistoryView.swift */; };
+		885301EA2C0227EF00495B6F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885301E92C0227EF00495B6F /* BaseView.swift */; };
+		885301EC2C043D9500495B6F /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885301EB2C043D9500495B6F /* ChatViewModel.swift */; };
+		8854F6BC2C23E34500EBE77A /* SpeechToTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854F6BB2C23E34500EBE77A /* SpeechToTextView.swift */; };
+		887B0C312C087F9F0071A21A /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887B0C302C087F9F0071A21A /* MailView.swift */; };
+		88BAFBEE2BFDC81D00A92AD1 /* JoyceAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFBED2BFDC81D00A92AD1 /* JoyceAIApp.swift */; };
+		88BAFBF02BFDC81D00A92AD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFBEF2BFDC81D00A92AD1 /* ContentView.swift */; };
+		88BAFBF22BFDC81E00A92AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BAFBF12BFDC81E00A92AD1 /* Assets.xcassets */; };
+		88BAFBF52BFDC81E00A92AD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BAFBF42BFDC81E00A92AD1 /* Preview Assets.xcassets */; };
+		88BAFBFF2BFDC81F00A92AD1 /* JoyceAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFBFE2BFDC81F00A92AD1 /* JoyceAITests.swift */; };
+		88BAFC092BFDC81F00A92AD1 /* JoyceAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC082BFDC81F00A92AD1 /* JoyceAIUITests.swift */; };
+		88BAFC0B2BFDC81F00A92AD1 /* JoyceAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC0A2BFDC81F00A92AD1 /* JoyceAIUITestsLaunchTests.swift */; };
+		88BAFC182BFDD03F00A92AD1 /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC172BFDD03F00A92AD1 /* FirstTabView.swift */; };
+		88BAFC1A2BFDD04D00A92AD1 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC192BFDD04D00A92AD1 /* SecondTabView.swift */; };
+		88BAFC1C2BFDD16E00A92AD1 /* FirstTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC1B2BFDD16E00A92AD1 /* FirstTabViewModel.swift */; };
+		88BAFC1E2BFDD18700A92AD1 /* SecondTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC1D2BFDD18700A92AD1 /* SecondTabViewModel.swift */; };
+		88BAFC202BFF257C00A92AD1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC1F2BFF257C00A92AD1 /* LoginView.swift */; };
+		88BAFC222C00382F00A92AD1 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC212C00382F00A92AD1 /* SignupView.swift */; };
+		88BAFC242C0043B000A92AD1 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC232C0043B000A92AD1 /* ChatView.swift */; };
+		88BAFC262C00631000A92AD1 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BAFC252C00631000A92AD1 /* Chat.swift */; };
+		88E9FC1B2C22952C00BE2A3A /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9FC1A2C22952C00BE2A3A /* SpeechRecognizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88BAFBFB2BFDC81F00A92AD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88BAFBE22BFDC81D00A92AD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88BAFBE92BFDC81D00A92AD1;
+			remoteInfo = JoyceAI;
+		};
+		88BAFC052BFDC81F00A92AD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88BAFBE22BFDC81D00A92AD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88BAFBE92BFDC81D00A92AD1;
+			remoteInfo = JoyceAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		885301D62C01AFD200495B6F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		885301D82C01E40900495B6F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		885301DA2C01E56F00495B6F /* JoyceLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyceLogin.swift; sourceTree = "<group>"; };
+		885301DC2C01ED9F00495B6F /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		885301DF2C01EFFA00495B6F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		885301E02C01EFFA00495B6F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		885301E12C01EFFA00495B6F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		885301E52C02069100495B6F /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		885301E72C02069E00495B6F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		885301E92C0227EF00495B6F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		885301EB2C043D9500495B6F /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		8854F6BB2C23E34500EBE77A /* SpeechToTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextView.swift; sourceTree = "<group>"; };
+		8854F6C02C27152F00EBE77A /* JoyceAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JoyceAI.entitlements; sourceTree = "<group>"; };
+		887B0C302C087F9F0071A21A /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		88BAFBEA2BFDC81D00A92AD1 /* JoyceAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyceAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BAFBED2BFDC81D00A92AD1 /* JoyceAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyceAIApp.swift; sourceTree = "<group>"; };
+		88BAFBEF2BFDC81D00A92AD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88BAFBF12BFDC81E00A92AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88BAFBF42BFDC81E00A92AD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88BAFBFA2BFDC81F00A92AD1 /* JoyceAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoyceAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BAFBFE2BFDC81F00A92AD1 /* JoyceAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyceAITests.swift; sourceTree = "<group>"; };
+		88BAFC042BFDC81F00A92AD1 /* JoyceAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoyceAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BAFC082BFDC81F00A92AD1 /* JoyceAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyceAIUITests.swift; sourceTree = "<group>"; };
+		88BAFC0A2BFDC81F00A92AD1 /* JoyceAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyceAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88BAFC172BFDD03F00A92AD1 /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
+		88BAFC192BFDD04D00A92AD1 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
+		88BAFC1B2BFDD16E00A92AD1 /* FirstTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewModel.swift; sourceTree = "<group>"; };
+		88BAFC1D2BFDD18700A92AD1 /* SecondTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewModel.swift; sourceTree = "<group>"; };
+		88BAFC1F2BFF257C00A92AD1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		88BAFC212C00382F00A92AD1 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		88BAFC232C0043B000A92AD1 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		88BAFC252C00631000A92AD1 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		88CDA1E12C0F1CA4000799BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		88E9FC1A2C22952C00BE2A3A /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88BAFBE72BFDC81D00A92AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BAFBF72BFDC81F00A92AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BAFC012BFDC81F00A92AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		885301DE2C01EFD400495B6F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				885301E12C01EFFA00495B6F /* Montserrat-Bold.ttf */,
+				885301E02C01EFFA00495B6F /* Montserrat-Medium.ttf */,
+				885301DF2C01EFFA00495B6F /* Montserrat-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8854F6BD2C2711DD00EBE77A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				885301D62C01AFD200495B6F /* LoginViewModel.swift */,
+				885301DA2C01E56F00495B6F /* JoyceLogin.swift */,
+				88BAFC1F2BFF257C00A92AD1 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8854F6BE2C27120300EBE77A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				88BAFC252C00631000A92AD1 /* Chat.swift */,
+				88BAFC232C0043B000A92AD1 /* ChatView.swift */,
+				885301EB2C043D9500495B6F /* ChatViewModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		8854F6BF2C27125800EBE77A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				88BAFBED2BFDC81D00A92AD1 /* JoyceAIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		88BAFBE12BFDC81D00A92AD1 = {
+			isa = PBXGroup;
+			children = (
+				88BAFBEC2BFDC81D00A92AD1 /* JoyceAI */,
+				88BAFBFD2BFDC81F00A92AD1 /* JoyceAITests */,
+				88BAFC072BFDC81F00A92AD1 /* JoyceAIUITests */,
+				88BAFBEB2BFDC81D00A92AD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88BAFBEB2BFDC81D00A92AD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88BAFBEA2BFDC81D00A92AD1 /* JoyceAI.app */,
+				88BAFBFA2BFDC81F00A92AD1 /* JoyceAITests.xctest */,
+				88BAFC042BFDC81F00A92AD1 /* JoyceAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88BAFBEC2BFDC81D00A92AD1 /* JoyceAI */ = {
+			isa = PBXGroup;
+			children = (
+				8854F6C02C27152F00EBE77A /* JoyceAI.entitlements */,
+				8854F6BF2C27125800EBE77A /* App */,
+				8854F6BE2C27120300EBE77A /* Chat */,
+				8854F6BD2C2711DD00EBE77A /* Login */,
+				88CDA1E12C0F1CA4000799BB /* Info.plist */,
+				885301DE2C01EFD400495B6F /* Fonts */,
+				88BAFBEF2BFDC81D00A92AD1 /* ContentView.swift */,
+				88BAFBF12BFDC81E00A92AD1 /* Assets.xcassets */,
+				885301D82C01E40900495B6F /* Colors.xcassets */,
+				88BAFBF32BFDC81E00A92AD1 /* Preview Content */,
+				88BAFC172BFDD03F00A92AD1 /* FirstTabView.swift */,
+				88BAFC192BFDD04D00A92AD1 /* SecondTabView.swift */,
+				88BAFC1B2BFDD16E00A92AD1 /* FirstTabViewModel.swift */,
+				88BAFC1D2BFDD18700A92AD1 /* SecondTabViewModel.swift */,
+				88BAFC212C00382F00A92AD1 /* SignupView.swift */,
+				885301DC2C01ED9F00495B6F /* AppFont.swift */,
+				885301E52C02069100495B6F /* AccountsView.swift */,
+				885301E72C02069E00495B6F /* HistoryView.swift */,
+				885301E92C0227EF00495B6F /* BaseView.swift */,
+				887B0C302C087F9F0071A21A /* MailView.swift */,
+				88E9FC1A2C22952C00BE2A3A /* SpeechRecognizer.swift */,
+				8854F6BB2C23E34500EBE77A /* SpeechToTextView.swift */,
+			);
+			path = JoyceAI;
+			sourceTree = "<group>";
+		};
+		88BAFBF32BFDC81E00A92AD1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				88BAFBF42BFDC81E00A92AD1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88BAFBFD2BFDC81F00A92AD1 /* JoyceAITests */ = {
+			isa = PBXGroup;
+			children = (
+				88BAFBFE2BFDC81F00A92AD1 /* JoyceAITests.swift */,
+			);
+			path = JoyceAITests;
+			sourceTree = "<group>";
+		};
+		88BAFC072BFDC81F00A92AD1 /* JoyceAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88BAFC082BFDC81F00A92AD1 /* JoyceAIUITests.swift */,
+				88BAFC0A2BFDC81F00A92AD1 /* JoyceAIUITestsLaunchTests.swift */,
+			);
+			path = JoyceAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88BAFBE92BFDC81D00A92AD1 /* JoyceAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BAFC0E2BFDC81F00A92AD1 /* Build configuration list for PBXNativeTarget "JoyceAI" */;
+			buildPhases = (
+				88BAFBE62BFDC81D00A92AD1 /* Sources */,
+				88BAFBE72BFDC81D00A92AD1 /* Frameworks */,
+				88BAFBE82BFDC81D00A92AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JoyceAI;
+			productName = JoyceAI;
+			productReference = 88BAFBEA2BFDC81D00A92AD1 /* JoyceAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88BAFBF92BFDC81F00A92AD1 /* JoyceAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BAFC112BFDC81F00A92AD1 /* Build configuration list for PBXNativeTarget "JoyceAITests" */;
+			buildPhases = (
+				88BAFBF62BFDC81F00A92AD1 /* Sources */,
+				88BAFBF72BFDC81F00A92AD1 /* Frameworks */,
+				88BAFBF82BFDC81F00A92AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88BAFBFC2BFDC81F00A92AD1 /* PBXTargetDependency */,
+			);
+			name = JoyceAITests;
+			productName = JoyceAITests;
+			productReference = 88BAFBFA2BFDC81F00A92AD1 /* JoyceAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88BAFC032BFDC81F00A92AD1 /* JoyceAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BAFC142BFDC81F00A92AD1 /* Build configuration list for PBXNativeTarget "JoyceAIUITests" */;
+			buildPhases = (
+				88BAFC002BFDC81F00A92AD1 /* Sources */,
+				88BAFC012BFDC81F00A92AD1 /* Frameworks */,
+				88BAFC022BFDC81F00A92AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88BAFC062BFDC81F00A92AD1 /* PBXTargetDependency */,
+			);
+			name = JoyceAIUITests;
+			productName = JoyceAIUITests;
+			productReference = 88BAFC042BFDC81F00A92AD1 /* JoyceAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88BAFBE22BFDC81D00A92AD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					88BAFBE92BFDC81D00A92AD1 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					88BAFBF92BFDC81F00A92AD1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 88BAFBE92BFDC81D00A92AD1;
+					};
+					88BAFC032BFDC81F00A92AD1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 88BAFBE92BFDC81D00A92AD1;
+					};
+				};
+			};
+			buildConfigurationList = 88BAFBE52BFDC81D00A92AD1 /* Build configuration list for PBXProject "JoyceAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88BAFBE12BFDC81D00A92AD1;
+			productRefGroup = 88BAFBEB2BFDC81D00A92AD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88BAFBE92BFDC81D00A92AD1 /* JoyceAI */,
+				88BAFBF92BFDC81F00A92AD1 /* JoyceAITests */,
+				88BAFC032BFDC81F00A92AD1 /* JoyceAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88BAFBE82BFDC81D00A92AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885301E22C01EFFA00495B6F /* Montserrat-Regular.ttf in Resources */,
+				885301E32C01EFFA00495B6F /* Montserrat-Medium.ttf in Resources */,
+				885301E42C01EFFA00495B6F /* Montserrat-Bold.ttf in Resources */,
+				885301D92C01E40900495B6F /* Colors.xcassets in Resources */,
+				88BAFBF52BFDC81E00A92AD1 /* Preview Assets.xcassets in Resources */,
+				88BAFBF22BFDC81E00A92AD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BAFBF82BFDC81F00A92AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BAFC022BFDC81F00A92AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88BAFBE62BFDC81D00A92AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BAFC1C2BFDD16E00A92AD1 /* FirstTabViewModel.swift in Sources */,
+				88BAFC202BFF257C00A92AD1 /* LoginView.swift in Sources */,
+				885301DD2C01ED9F00495B6F /* AppFont.swift in Sources */,
+				885301EA2C0227EF00495B6F /* BaseView.swift in Sources */,
+				88BAFC1A2BFDD04D00A92AD1 /* SecondTabView.swift in Sources */,
+				88BAFBF02BFDC81D00A92AD1 /* ContentView.swift in Sources */,
+				885301EC2C043D9500495B6F /* ChatViewModel.swift in Sources */,
+				887B0C312C087F9F0071A21A /* MailView.swift in Sources */,
+				88BAFC222C00382F00A92AD1 /* SignupView.swift in Sources */,
+				88E9FC1B2C22952C00BE2A3A /* SpeechRecognizer.swift in Sources */,
+				885301DB2C01E56F00495B6F /* JoyceLogin.swift in Sources */,
+				88BAFC182BFDD03F00A92AD1 /* FirstTabView.swift in Sources */,
+				885301E82C02069E00495B6F /* HistoryView.swift in Sources */,
+				88BAFC1E2BFDD18700A92AD1 /* SecondTabViewModel.swift in Sources */,
+				8854F6BC2C23E34500EBE77A /* SpeechToTextView.swift in Sources */,
+				885301D72C01AFD200495B6F /* LoginViewModel.swift in Sources */,
+				88BAFC262C00631000A92AD1 /* Chat.swift in Sources */,
+				88BAFC242C0043B000A92AD1 /* ChatView.swift in Sources */,
+				885301E62C02069100495B6F /* AccountsView.swift in Sources */,
+				88BAFBEE2BFDC81D00A92AD1 /* JoyceAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BAFBF62BFDC81F00A92AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BAFBFF2BFDC81F00A92AD1 /* JoyceAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BAFC002BFDC81F00A92AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BAFC092BFDC81F00A92AD1 /* JoyceAIUITests.swift in Sources */,
+				88BAFC0B2BFDC81F00A92AD1 /* JoyceAIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88BAFBFC2BFDC81F00A92AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88BAFBE92BFDC81D00A92AD1 /* JoyceAI */;
+			targetProxy = 88BAFBFB2BFDC81F00A92AD1 /* PBXContainerItemProxy */;
+		};
+		88BAFC062BFDC81F00A92AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88BAFBE92BFDC81D00A92AD1 /* JoyceAI */;
+			targetProxy = 88BAFC052BFDC81F00A92AD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		88BAFC0C2BFDC81F00A92AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88BAFC0D2BFDC81F00A92AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88BAFC0F2BFDC81F00A92AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JoyceAI/JoyceAI.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"JoyceAI/Preview Content\"";
+				DEVELOPMENT_TEAM = ADZ6J49PHM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JoyceAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyceai.JoyceAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88BAFC102BFDC81F00A92AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JoyceAI/JoyceAI.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"JoyceAI/Preview Content\"";
+				DEVELOPMENT_TEAM = ADZ6J49PHM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JoyceAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyceai.JoyceAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88BAFC122BFDC81F00A92AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyceai.JoyceAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JoyceAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JoyceAI";
+			};
+			name = Debug;
+		};
+		88BAFC132BFDC81F00A92AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyceai.JoyceAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JoyceAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JoyceAI";
+			};
+			name = Release;
+		};
+		88BAFC152BFDC81F00A92AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyceai.JoyceAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JoyceAI;
+			};
+			name = Debug;
+		};
+		88BAFC162BFDC81F00A92AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyceai.JoyceAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JoyceAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88BAFBE52BFDC81D00A92AD1 /* Build configuration list for PBXProject "JoyceAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BAFC0C2BFDC81F00A92AD1 /* Debug */,
+				88BAFC0D2BFDC81F00A92AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BAFC0E2BFDC81F00A92AD1 /* Build configuration list for PBXNativeTarget "JoyceAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BAFC0F2BFDC81F00A92AD1 /* Debug */,
+				88BAFC102BFDC81F00A92AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BAFC112BFDC81F00A92AD1 /* Build configuration list for PBXNativeTarget "JoyceAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BAFC122BFDC81F00A92AD1 /* Debug */,
+				88BAFC132BFDC81F00A92AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BAFC142BFDC81F00A92AD1 /* Build configuration list for PBXNativeTarget "JoyceAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BAFC152BFDC81F00A92AD1 /* Debug */,
+				88BAFC162BFDC81F00A92AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88BAFBE22BFDC81D00A92AD1 /* Project object */;
+}
